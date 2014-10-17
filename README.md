@@ -1,5 +1,7 @@
 # ADE - Revisiting TLP
 
+Version 0.1.2
+
 ## Overview
 
 TLP has been a key part of the Internet security comminty for years. It provided simple handles that could be applied to shared information in order to communicate to the recipient what audiences they might share the information with. This protocol supports 3 dimensions. Attribution who is credited with publishing the data, Distribution who you may share the data with, and Execution what you may do with the data.
@@ -17,7 +19,10 @@ An ADE tag in normal text-based communication is made up of a simple case sensit
 ##Rules
 * Categories should avoid Homoglyph characters, lowercase l and upper-case O. 
 * New characters may be added to a category or depreciated, but not replaced.
+* Category designators should be somehow mnemonic where possible. (e.g. F = Forbidden)
 
 ##Examples
 * ADE:F0I - Attribution forbidden, No distribution, No Action - Most restrictive
 * ADE:FPA - Attribution forbidden, Public distribution, Any Action - Least restrictive
+
+
