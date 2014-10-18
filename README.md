@@ -14,7 +14,9 @@ This proposal is not built on top of TLP to avoid confusion. Once a 1.0 version 
 
 ## TL;DR version 
 
-An ADE tag in normal text-based communication is made up of a simple case sensitive ASCII string. The string starts with the prefix "ADE:". Much like the traditional "TLP:", this indicates which system the author wishes to proclaim. There are then indicators for each of the three categories, attribute, distribute and excute. The first category will indicate the author's choice of attribution requirements. For example F = Attribution forbidden, R = Attribution Required, further details of each option will be discussed in greater detail in the per categories files found in this repository. The second category designates distribution limits placed on the data. Examples here are P = Public distribution (think TLP WHITE), 0 = Recipent only, no redistribution (think TLP RED, "YOUR EYES ONLY"). Finanlly is the execution category, this indicates what the recipent is permitted to do with the covered information. For example "I" indicates that the data is informational only, it is not to be used for blocking, interogated, or reported. "A" indicates all actions are permitted.
+An ADE tag in normal text-based communication is made up of a simple case sensitive ASCII URL. The prefix will always be "https://$domain/ade/". In place of the traditional "TLP:", this indicates which system the author wishes to proclaim. The remainder of the URL indicates what permissions and restrictions the author wishes to perscribe. These wishes are declared in three categories. Attribution, Distribution, and Execution. Each category comes with a one character designators. This URL will return a detailed breakdown of the tag and the requirements it conveys.
+
+The first character will indicate the author's choice of attribution requirements. For example F = Attribution forbidden, R = Attribution Required, further details of each option will be discussed in greater detail in the per categories files found in this repository. The second character designates distribution limits placed on the data. Examples here are P = Public distribution (think TLP WHITE), 0 = Recipent only, no redistribution (think TLP RED, "YOUR EYES ONLY"). Finanlly is the execution category, this indicates what the recipent is permitted to do with the covered information. For example "I" indicates that the data is informational only, it is not to be used for blocking, interogated, or reported. "A" indicates all actions are permitted.
 
 ##Rules
 * Categories should avoid Homoglyph characters, lowercase l and upper-case O. 
@@ -22,7 +24,7 @@ An ADE tag in normal text-based communication is made up of a simple case sensit
 * Category designators should be somehow mnemonic where possible. (e.g. F = Forbidden)
 
 ##Examples
-* ADE:F0I - Attribution forbidden, No distribution, No Action - Most restrictive
-* ADE:FPA - Attribution forbidden, Public distribution, Any Action - Least restrictive
+* https://$domain/ade/F0I - Attribution forbidden, No distribution, No Action - Most restrictive
+* https://$domain/ade/FPA - Attribution forbidden, Public distribution, Any Action - Least restrictive
 
 
